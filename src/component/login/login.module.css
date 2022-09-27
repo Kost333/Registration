@@ -64,7 +64,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 70px;
+    padding-bottom: 70px;
 }
 
 .headText {
@@ -76,42 +76,6 @@
     color: mediumaquamarine;
     font-size: 20px;
     font-weight: lighter;
-}
-
-.NAME {
-    color: antiquewhite;
-    font-size: 10px;
-}
-
-.name {
-    width: 100%;
-    height: 25px;
-    background-color: darkslategrey;
-    color: whitesmoke;
-}
-
-.inputName {
-    width: 60%;
-    height: 35px;
-    padding: 15px;
-}
-
-.USERNAME {
-    color: antiquewhite;
-    font-size: 10px;
-}
-
-.username {
-    width: 100%;
-    height: 25px;
-    background-color: darkslategrey;
-    color: whitesmoke;
-}
-
-.InputUsername {
-    width: 60%;
-    height: 35px;
-    padding: 15px;
 }
 
 .EMAIL {
@@ -150,44 +114,7 @@
     padding: 15px;
 }
 
-.CONFIRM_PASSWORD {
-    color: antiquewhite;
-    font-size: 10px;
-}
-
-.confirm_password {
-    width: 100%;
-    height: 25px;
-    background-color: darkslategrey;
-    color: whitesmoke;
-}
-
-.inputConfirmPassword {
-    width: 60%;
-    height: 35px;
-    padding: 15px;
-}
-
-.checkbox {
-    width: 60%;
-    height: 35px;
-    padding: 15px;
-    display: flex;
-}
-
-.check {
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-}
-
-.checkmark {
-    color: antiquewhite;
-    font-size: 13px;
-    margin-left: 10px;
-}
-
-.buttonCreate {
+.buttonLogin {
     width: 60%;
     height: 35px;
     padding: 15px;
@@ -206,18 +133,17 @@
     background-color: #75adaf;
 }
 
-
-.textLogin {
+.textCreateAccount {
     color: whitesmoke;
     font-size: 12px;
 }
 
-.LoginLink {
+.CreateAccountLink {
     color: whitesmoke;
     text-decoration: none;
     margin-left: 10px;
 }
 
-.LoginLink:hover {
+.CreateAccountLink:hover {
     text-decoration: underline;
 }

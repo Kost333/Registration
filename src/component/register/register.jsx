@@ -17,8 +17,8 @@ const Register = () => {
                 name: state.name,
                 username: state.username,
                 email: state.email,
-                password: '',
-                confirmPassword: '',
+                password: state.password,
+                confirmPassword: state.confirmPassword,
             })
             console.log(state);
         }
@@ -69,14 +69,15 @@ const Register = () => {
                         <input type="checkbox" className={style.check}/>
                         <span className={style.checkmark}>Do you agree to our terms ?</span>
                     </div>
-                    <div className={style.buttonCreate}>
-                        <button className={style.buttonInput}>
-                            CREATE ACCOUNT
-                        </button>
+                    <div>
+                        <nav>
+                            <span className={style.textLogin}>Have an account?</span>
+                            <a href="./" className={style.LoginLink}>Log in</a>
+                        </nav>
                     </div>
                     <div className={style.buttonCreate}>
                         <button className={style.buttonInput} onClick={signIn}>
-                            SIGN IN
+                            CREATE ACCOUNT
                         </button>
                     </div>
                 </div>
