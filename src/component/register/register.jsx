@@ -9,16 +9,18 @@ const Register = () => {
         email: '',
         password: '',
         confirmPassword: '',
+        isTerms: false,
     });
 
     const signIn = () => {
-        if (state.confirmPassword === state.password) {
+        if (state.confirmPassword === state.password && state.isTerms === true) {
             setState({
                 name: state.name,
                 username: state.username,
                 email: state.email,
                 password: state.password,
                 confirmPassword: state.confirmPassword,
+                isTerms: state.isTerms,
             })
             console.log(state);
         }
@@ -66,7 +68,8 @@ const Register = () => {
                                onChange={e => setState({...state, confirmPassword: e.target.value})}/>
                     </div>
                     <div className={style.checkbox}>
-                        <input type="checkbox" className={style.check}/>
+                        <input type="checkbox" className={style.check} checked={state.isTerms}
+                               onChange={() => setState({...state, isTerms: !state.isTerms})}/>
                         <span className={style.checkmark}>Do you agree to our terms ?</span>
                     </div>
                     <div>

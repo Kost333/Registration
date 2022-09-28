@@ -15,6 +15,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 25px 25px 25px 10px #508585;
+    border-radius: 20px;
 }
 
 .image {
@@ -57,6 +58,7 @@
     align-items: center;
     background-color: darkslategrey;
     flex-direction: column;
+    border-radius: 20px;
 }
 
 .headerText {
